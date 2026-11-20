@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="THE NEXT INTELLIGENCE — FROM DATA TO DECISIONS. An interactive bilingual presentation on data, AI, and smart decisions.">
+  <title>THE NEXT INTELLIGENCE — From Data to Decisions</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slides.css">
+</head>
+<body>
+  <a class="skip-link" href="#slide-1" data-i18n="skipToContent">Skip to presentation</a>
+
+  <div class="app" id="app">
+    <header class="top-bar" aria-label="Presentation controls">
+      <div class="brand-mini" aria-hidden="true">
+        <span class="brand-dot"></span>
+        <span class="brand-text">TNI</span>
+      </div>
+      <div class="top-actions">
+        <button type="button" class="icon-btn" id="langToggle" aria-label="Switch language" title="Switch language">
+          <span class="lang-indicator" id="langIndicator">AR</span>
+        </button>
+        <button type="button" class="icon-btn" id="fullscreenToggle" aria-label="Enter fullscreen" aria-pressed="false" title="Fullscreen">
+          <svg class="icon icon-expand" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3H3v4m0-4 5 5M17 3h4v4m0-4-5 5M7 21H3v-4m0 4 5-5m9 5h4v-4m0 4-5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon icon-compress" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 3v4H5m4-4L4 8m11-5v4h4m-4-4 5 5M9 21v-4H5m4 4-5-5m11 5v-4h4m-4 4-5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="presentation" class="presentation" aria-live="polite">
+      <div class="slides-viewport" id="slidesViewport">
+        <div class="slides-track" id="slidesTrack">
+          <!-- Slide 01 -->
+          <section class="slide is-active" id="slide-1" data-slide="1" aria-label="Slide 1 of 8" aria-hidden="false">
+            <div class="slide-bg slide-bg-1" aria-hidden="true">
+              <svg class="bg-network" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4cc9f0" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.8"/>
+                  </linearGradient>
+                  <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#4cc9f0" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#4cc9f0" stop-opacity="0"/>
+                  </radialGradient>
+                  <filter id="softGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                </defs>
+                <rect width="1200" height="800" fill="url(#glow1)" opacity="0.35"/>
+                <g class="net-lines" stroke="url(#g1)" stroke-width="1" opacity="0.35">
+                  <path class="flow p1" d="M50,120 C250,80 350,260 520,220 S780,120 980,180 S1120,320 1180,260"/>
+                  <path class="flow p2" d="M-20,360 C180,300 320,420 500,380 S740,480 920,420 S1080,520 1220,460"/>
+                  <path class="flow p3" d="M80,620 C260,560 420,700 600,640 S860,560 1040,600 S1160,720 1240,680"/>
+                  <line x1="180" y1="140" x2="420" y2="300"/><line x1="420" y1="300" x2="620" y2="180"/>
+                  <line x1="620" y1="180" x2="860" y2="320"/><line x1="860" y1="320" x2="1040" y2="220"/>
+                  <line x1="300" y1="520" x2="520" y2="420"/><line x1="520" y1="420" x2="760" y2="520"/>
+                  <line x1="760" y1="520" x2="980" y2="460"/><line x1="420" y1="300" x2="520" y2="420"/>
+                  <line x1="620" y1="180" x2="760" y2="520"/><line x1="860" y1="320" x2="980" y2="460"/>
+                </g>
+                <g class="net-nodes" fill="#e0f7ff" filter="url(#softGlow)">
+                  <circle class="node n1" cx="180" cy="140" r="4"/><circle class="node n2" cx="420" cy="300" r="5"/>
+                  <circle class="node n3" cx="620" cy="180" r="4"/><circle class="node n4" cx="860" cy="320" r="5"/>
+                  <circle class="node n5" cx="1040" cy="220" r="4"/><circle class="node n6" cx="300" cy="520" r="4"/>
+                  <circle class="node n7" cx="520" cy="420" r="5"/><circle class="node n8" cx="760" cy="520" r="4"/>
+                  <circle class="node n9" cx="980" cy="460" r="5"/>
+                </g>
+                <g class="packets" fill="#4cc9f0">
+                  <circle class="pkt k1" r="3"><animateMotion dur="6s" repeatCount="indefinite" path="M50,120 C250,80 350,260 520,220 S780,120 980,180 S1120,320 1180,260"/></circle>
+                  <circle class="pkt k2" r="2.5" fill="#a78bfa"><animateMotion dur="7s" repeatCount="indefinite" path="M-20,360 C180,300 320,420 500,380 S740,480 920,420 S1080,520 1220,460"/></circle>
+                  <circle class="pkt k3" r="3" fill="#e0f7ff"><animateMotion dur="8s" repeatCount="indefinite" path="M80,620 C260,560 420,700 600,640 S860,560 1040,600 S1160,720 1240,680"/></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="slide-content hero-content">
+              <p class="eyebrow" data-i18n="s1.eyebrow">An interactive journey</p>
+              <h1 class="hero-title">
+                <span class="line" data-i18n="s1.title1">THE NEXT</span>
+                <span class="line accent" data-i18n="s1.title2">INTELLIGENCE</span>
+              </h1>
+              <p class="tagline" data-i18n="s1.tagline">FROM DATA TO DECISIONS</p>
+              <p class="hero-sub" data-i18n="s1.sub">Discover how raw signals become insight, and how insight shapes the choices that move our world forward.</p>
+            </div>
+          </section>
+
+          <!-- Slide 02 -->
+          <section class="slide" id="slide-2" data-slide="2" aria-label="Slide 2 of 8" aria-hidden="true">
+            <div class="slide-bg slide-bg-2" aria-hidden="true">
+              <div class="grid-plane"></div>
+            </div>
+            <div class="slide-content split-layout">
+              <div class="text-col">
+                <p class="slide-kicker" data-i18n="s2.kicker">Slide 02</p>
+                <h2 class="slide-title" data-i18n="s2.title">THE DATA</h2>
+                <p class="slide-lead" data-i18n="s2.lead">Where does the journey begin?</p>
+                <div class="info-blocks">
+                  <article class="info-card">
+                    <h3 data-i18n="s2.h1">What is data?</h3>
+                    <p data-i18n="s2.p1">Data is a collection of raw facts, measurements, and observations—numbers, text, clicks, images, or sensor readings—captured before they are interpreted.</p>
+                  </article>
+                  <article class="info-card">
+                    <h3 data-i18n="s2.h2">Raw data vs. information</h3>
+                    <p data-i18n="s2.p2">Raw data is unprocessed and often unclear on its own. Information emerges when data is organized and given context so it can answer a question.</p>
+                  </article>
+                  <article class="info-card">
+                    <h3 data-i18n="s2.h3">Everyday and business examples</h3>
+                    <ul class="clean-list">
+                      <li data-i18n="s2.li1">Daily life: step counts, weather readings, and messages.</li>
+                      <li data-i18n="s2.li2">Business: sales receipts, website visits, and customer feedback.</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+              <div class="visual-col">
+                <div class="viz-card" aria-label="Data sources flowing into a central hub">
+                  <svg class="viz-sources" viewBox="0 0 520 520" role="img" aria-labelledby="s2viztitle s2vizdesc">
+                    <title id="s2viztitle" data-i18n="s2.vizTitle">Data converging from many sources</title>
+                    <desc id="s2vizdesc" data-i18n="s2.vizDesc">Icons representing sensors, people, transactions, and devices send streams into a central core.</desc>
+                    <defs>
+                      <linearGradient id="stream" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#4cc9f0" stop-opacity="0"/>
+                        <stop offset="50%" stop-color="#4cc9f0" stop-opacity="0.9"/>
+                        <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.2"/>
+                      </linearGradient>
+                    </defs>
+                    <g class="hub">
+                      <circle cx="260" cy="260" r="58" class="hub-ring"/>
+                      <circle cx="260" cy="260" r="34" class="hub-core"/>
+                      <text x="260" y="266" text-anchor="middle" class="hub-label" data-i18n-svg="s2.hub">DATA</text>
+                    </g>
+                    <g class="source sA" transform="translate(60,80)">
+                      <rect x="0" y="0" rx="14" ry="14" width="90" height="64" class="src-box"/>
+                      <path d="M20 40h50M20 24h30" stroke="#bfefff" stroke-width="3" stroke-linecap="round"/>
+                      <text x="45" y="82" text-anchor="middle" class="src-label" data-i18n-svg="s2.src1">Sensors</text>
+                      <path class="stream-line" d="M90,32 C150,60 170,120 200,170" stroke="url(#stream)" stroke-width="3" fill="none"/>
+                      <circle r="3" class="dot-flow"><animateMotion dur="3s" repeatCount="indefinite" path="M90,32 C150,60 170,120 200,170"/></circle>
+                    </g>
+                    <g class="source sB" transform="translate(360,60)">
+                      <rect x="0" y="0" rx="14" ry="14" width="90" height="64" class="src-box"/>
+                      <circle cx="30" cy="24" r="8" stroke="#bfefff" stroke-width="2.5" fill="none"/><path d="M16 48c4-10 24-10 28 0" stroke="#bfefff" stroke-width="2.5" fill="none"/>
+                      <text x="45" y="82" text-anchor="middle" class="src-label" data-i18n-svg="s2.src2">People</text>
+                      <path class="stream-line" d="M0,40 C-40,80 -60,130 -90,170" stroke="url(#stream)" stroke-width="3" fill="none"/>
+                      <circle r="3" class="dot-flow"><animateMotion dur="3.4s" repeatCount="indefinite" path="M0,40 C-40,80 -60,130 -90,170"/></circle>
+                    </g>
+                    <g class="source sC" transform="translate(40,360)">
+                      <rect x="0" y="0" rx="14" ry="14" width="90" height="64" class="src-box"/>
+                      <path d="M22 20h46v24H22z" stroke="#bfefff" stroke-width="2.5" fill="none"/><path d="M30 44v8h30v-8" stroke="#bfefff" stroke-width="2.5"/>
+                      <text x="45" y="82" text-anchor="middle" class="src-label" data-i18n-svg="s2.src3">Transactions</text>
+                      <path class="stream-line" d="M90,20 C140,-10 170,-40 200,-80" stroke="url(#stream)" stroke-width="3" fill="none"/>
+                      <circle r="3" class="dot-flow"><animateMotion dur="3.2s" repeatCount="indefinite" path="M90,20 C140,-10 170,-40 200,-80"/></circle>
+                    </g>
+                    <g class="source sD" transform="translate(370,360)">
+                      <rect x="0" y="0" rx="14" ry="14" width="90" height="64" class="src-box"/>
+                      <rect x="26" y="14" width="38" height="28" rx="4" stroke="#bfefff" stroke-width="2.5" fill="none"/><circle cx="45" cy="46" r="2" fill="#bfefff"/>
+                      <text x="45" y="82" text-anchor="middle" class="src-label" data-i18n-svg="s2.src4">Devices</text>
+                      <path class="stream-line" d="M0,20 C-50,-10 -80,-40 -100,-80" stroke="url(#stream)" stroke-width="3" fill="none"/>
+                      <circle r="3" class="dot-flow"><animateMotion dur="3.6s" repeatCount="indefinite" path="M0,20 C-50,-10 -80,-40 -100,-80"/></circle>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 03 -->
+          <section class="slide" id="slide-3" data-slide="3" aria-label="Slide 3 of 8" aria-hidden="true">
+            <div class="slide-bg slide-bg-3" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div></div>
+            <div class="slide-content">
+              <div class="section-head">
+                <p class="slide-kicker" data-i18n="s3.kicker">Slide 03</p>
+                <h2 class="slide-title" data-i18n="s3.title">THE TRANSFORMATION</h2>
+                <p class="slide-lead" data-i18n="s3.lead">From raw data to meaningful information</p>
+              </div>
+              <div class="transform-layout">
+                <div class="transform-steps">
+                  <div class="step-card"><span class="step-num">01</span><div><h3 data-i18n="s3.h1">Collect</h3><p data-i18n="s3.p1">Gather data from relevant sources with clear purpose and consent where required.</p></div></div>
+                  <div class="step-card"><span class="step-num">02</span><div><h3 data-i18n="s3.h2">Clean</h3><p data-i18n="s3.p2">Fix errors, remove duplicates, and handle missing or inconsistent values.</p></div></div>
+                  <div class="step-card"><span class="step-num">03</span><div><h3 data-i18n="s3.h3">Organize</h3><p data-i18n="s3.p3">Structure and label data so it can be searched, compared, and understood.</p></div></div>
+                  <div class="step-card highlight"><span class="step-num">!</span><div><h3 data-i18n="s3.h4">Why quality matters</h3><p data-i18n="s3.p4">Poor-quality data can mislead analysis and decisions. Reliable outcomes start with trustworthy inputs.</p></div></div>
+                </div>
+                <div class="transform-viz" aria-label="Animated transformation from unstructured to structured data">
+                  <svg viewBox="0 0 560 420" class="viz-transform" role="img" aria-labelledby="s3viztitle s3vizdesc">
+                    <title id="s3viztitle" data-i18n="s3.vizTitle">Data transformation process</title>
+                    <desc id="s3vizdesc" data-i18n="s3.vizDesc">Scattered fragments move through a processing stage and become ordered rows.</desc>
+                    <defs>
+                      <linearGradient id="procGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4cc9f0"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient>
+                    </defs>
+                    <text x="70" y="36" class="viz-cap" data-i18n-svg="s3.cap1">Unstructured</text>
+                    <text x="250" y="36" text-anchor="middle" class="viz-cap" data-i18n-svg="s3.cap2">Process</text>
+                    <text x="430" y="36" class="viz-cap" data-i18n-svg="s3.cap3">Information</text>
+                    <g class="chaos">
+                      <rect class="frag f1" x="30" y="70" width="46" height="18" rx="4"/>
+                      <rect class="frag f2" x="90" y="60" width="30" height="30" rx="6"/>
+                      <rect class="frag f3" x="40" y="120" width="55" height="14" rx="4"/>
+                      <rect class="frag f4" x="110" y="110" width="22" height="22" rx="5"/>
+                      <rect class="frag f5" x="25" y="170" width="38" height="26" rx="5"/>
+                      <rect class="frag f6" x="75" y="160" width="60" height="12" rx="4"/>
+                      <rect class="frag f7" x="55" y="220" width="28" height="28" rx="6"/>
+                      <rect class="frag f8" x="95" y="215" width="44" height="16" rx="4"/>
+                      <rect class="frag f9" x="35" y="270" width="50" height="20" rx="5"/>
+                      <rect class="frag f10" x="100" y="275" width="34" height="14" rx="4"/>
+                    </g>
+                    <g class="processor" transform="translate(210,120)">
+                      <path d="M40 0 L120 0 L140 40 L140 140 L120 180 L40 180 L20 140 L20 40 Z" class="proc-shape"/>
+                      <path d="M55 55h50M55 90h50M55 125h30" stroke="#e8fbff" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+                      <circle cx="80" cy="90" r="46" class="proc-spin" fill="none" stroke="url(#procGrad)" stroke-width="2" stroke-dasharray="10 8"/>
+                    </g>
+                    <g class="arrows-flow" stroke="#4cc9f0" stroke-width="2.5" fill="none" stroke-linecap="round">
+                      <path d="M150 150 C180 150 190 150 210 150" class="arrow a1"/>
+                      <path d="M350 150 C380 150 390 150 410 150" class="arrow a2"/>
+                      <path d="M150 230 C180 230 190 230 210 230" class="arrow a1"/>
+                      <path d="M350 230 C380 230 390 230 410 230" class="arrow a2"/>
+                    </g>
+                    <g class="ordered" transform="translate(400,70)">
+                      <rect x="0" y="0" width="130" height="240" rx="12" class="table-frame"/>
+                      <g class="rows">
+                        <rect class="row r1" x="12" y="18" width="106" height="22" rx="5"/>
+                        <rect class="row r2" x="12" y="50" width="106" height="22" rx="5"/>
+                        <rect class="row r3" x="12" y="82" width="106" height="22" rx="5"/>
+                        <rect class="row r4" x="12" y="114" width="106" height="22" rx="5"/>
+                        <rect class="row r5" x="12" y="146" width="106" height="22" rx="5"/>
+                        <rect class="row r6" x="12" y="178" width="106" height="22" rx="5"/>
+                        <rect class="row r7" x="12" y="210" width="106" height="18" rx="5"/>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 04 -->
+          <section class="slide" id="slide-4" data-slide="4" aria-label="Slide 4 of 8" aria-hidden="true">
+            <div class="slide-bg slide-bg-4" aria-hidden="true"><div class="mesh"></div></div>
+            <div class="slide-content">
+              <div class="section-head narrow">
+                <p class="slide-kicker" data-i18n="s4.kicker">Slide 04</p>
+                <h2 class="slide-title" data-i18n="s4.title">THE INTELLIGENCE</h2>
+                <p class="slide-lead" data-i18n="s4.lead">When machines learn from patterns</p>
+              </div>
+              <div class="intel-layout">
+                <div class="intel-cards">
+                  <article class="glass-card"><h3 data-i18n="s4.h1">AI and understanding data</h3><p data-i18n="s4.p1">Artificial intelligence uses algorithms to find patterns, relationships, and signals in large or complex datasets that are difficult to analyze manually.</p></article>
+                  <article class="glass-card"><h3 data-i18n="s4.h2">How machine learning learns</h3><p data-i18n="s4.p2">Machine learning models improve by learning from examples: they adjust internal parameters to reduce errors and generalize patterns from training data.</p></article>
+                  <article class="glass-card example"><h3 data-i18n="s4.h3">A simple example</h3><p data-i18n="s4.p3">An email app can learn from examples of messages people mark as spam or not spam, then use those patterns to sort new incoming messages.</p></article>
+                </div>
+                <div class="intel-viz">
+                  <svg viewBox="0 0 600 360" class="viz-model" role="img" aria-labelledby="s4viztitle s4vizdesc">
+                    <title id="s4viztitle" data-i18n="s4.vizTitle">Data, model, and result</title>
+                    <desc id="s4vizdesc" data-i18n="s4.vizDesc">Data feeds a model, which produces a result, with feedback improving the model.</desc>
+                    <defs>
+                      <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4cc9f0"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient>
+                      <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#8be9ff"/></marker>
+                    </defs>
+                    <!-- Data column -->
+                    <g transform="translate(30,60)">
+                      <rect class="panel" x="0" y="0" width="130" height="240" rx="16"/>
+                      <text x="65" y="34" text-anchor="middle" class="panel-title" data-i18n-svg="s4.data">DATA</text>
+                      <g class="data-points">
+                        <circle cx="35" cy="80" r="7" class="dp d1"/><circle cx="75" cy="70" r="5" class="dp d2"/><circle cx="100" cy="95" r="6" class="dp d3"/>
+                        <circle cx="50" cy="120" r="5" class="dp d4"/><circle cx="90" cy="130" r="7" class="dp d1"/><circle cx="35" cy="160" r="6" class="dp d2"/>
+                        <circle cx="70" cy="170" r="5" class="dp d3"/><circle cx="100" cy="185" r="6" class="dp d4"/><circle cx="55" cy="205" r="5" class="dp d1"/>
+                      </g>
+                    </g>
+                    <!-- Flow to model -->
+                    <path d="M165 180 C200 180 220 180 250 180" stroke="#8be9ff" stroke-width="2.5" fill="none" marker-end="url(#arr)" class="flow-arrow"/>
+                    <circle r="4" fill="#fff"><animateMotion dur="2.2s" repeatCount="indefinite" path="M165 180 C200 180 220 180 245 180"/></circle>
+                    <!-- Model -->
+                    <g transform="translate(250,40)">
+                      <rect class="panel model-panel" x="0" y="0" width="140" height="280" rx="18"/>
+                      <text x="70" y="34" text-anchor="middle" class="panel-title" data-i18n-svg="s4.model">MODEL</text>
+                      <g class="nn" stroke="#8be9ff" stroke-width="1.2" opacity="0.7">
+                        <line x1="30" y1="90" x2="70" y2="70"/><line x1="30" y1="90" x2="70" y2="120"/><line x1="30" y1="90" x2="70" y2="170"/><line x1="30" y1="90" x2="70" y2="220"/>
+                        <line x1="30" y1="150" x2="70" y2="70"/><line x1="30" y1="150" x2="70" y2="120"/><line x1="30" y1="150" x2="70" y2="170"/><line x1="30" y1="150" x2="70" y2="220"/>
+                        <line x1="30" y1="210" x2="70" y2="70"/><line x1="30" y1="210" x2="70" y2="120"/><line x1="30" y1="210" x2="70" y2="170"/><line x1="30" y1="210" x2="70" y2="220"/>
+                        <line x1="70" y1="70" x2="110" y2="100"/><line x1="70" y1="120" x2="110" y2="100"/><line x1="70" y1="170" x2="110" y2="100"/><line x1="70" y1="220" x2="110" y2="100"/>
+                        <line x1="70" y1="70" x2="110" y2="190"/><line x1="70" y1="120" x2="110" y2="190"/><line x1="70" y1="170" x2="110" y2="190"/><line x1="70" y1="220" x2="110" y2="190"/>
+                      </g>
+                      <g fill="#e8fbff">
+                        <circle cx="30" cy="90" r="6" class="pulse"/><circle cx="30" cy="150" r="6" class="pulse"/><circle cx="30" cy="210" r="6" class="pulse"/>
+                        <circle cx="70" cy="70" r="5"/><circle cx="70" cy="120" r="5"/><circle cx="70" cy="170" r="5"/><circle cx="70" cy="220" r="5"/>
+                        <circle cx="110" cy="100" r="6" class="pulse"/><circle cx="110" cy="190" r="6" class="pulse"/>
+                      </g>
+                    </g>
+                    <!-- Flow to result -->
+                    <path d="M395 180 C430 180 450 180 480 180" stroke="#8be9ff" stroke-width="2.5" fill="none" marker-end="url(#arr)" class="flow-arrow"/>
+                    <circle r="4" fill="#a78bfa"><animateMotion dur="2.2s" begin="1s" repeatCount="indefinite" path="M395 180 C430 180 450 180 475 180"/></circle>
+                    <!-- Result -->
+                    <g transform="translate(480,90)">
+                      <rect class="panel result-panel" x="0" y="0" width="100" height="180" rx="16"/>
+                      <text x="50" y="34" text-anchor="middle" class="panel-title" data-i18n-svg="s4.result">RESULT</text>
+                      <path d="M25 120 L45 95 L60 110 L80 70" fill="none" stroke="#4cc9f0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="result-line"/>
+                      <circle cx="80" cy="70" r="5" fill="#7c3aed" class="pulse"/>
+                      <text x="50" y="150" text-anchor="middle" class="result-tag" data-i18n-svg="s4.insight">Insight</text>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 05 -->
+          <section class="slide" id="slide-5" data-slide="5" aria-label="Slide 5 of 8" aria-hidden="true">
+            <div class="slide-bg slide-bg-5" aria-hidden="true"><div class="chart-grid-bg"></div></div>
+            <div class="slide-content">
+              <div class="section-head">
+                <p class="slide-kicker" data-i18n="s5.kicker">Slide 05</p>
+                <h2 class="slide-title" data-i18n="s5.title">THE ANALYSIS</h2>
+                <p class="slide-lead" data-i18n="s5.lead">Discovering patterns and anticipating what comes next</p>
+              </div>
+              <div class="analysis-layout">
+                <div class="analysis-text">
+                  <div class="compare-pills">
+                    <div class="pill-card"><h3 data-i18n="s5.h1">Descriptive analysis</h3><p data-i18n="s5.p1">Looks at past and current data to understand what happened and what is happening now—summaries, trends, and reports.</p></div>
+                    <div class="pill-card accent"><h3 data-i18n="s5.h2">Predictive analysis</h3><p data-i18n="s5.p2">Uses historical patterns and models to estimate what may happen next, helping teams prepare rather than react late.</p></div>
+                  </div>
+                  <article class="case-card">
+                    <h3 data-i18n="s5.h3">A real-world application</h3>
+                    <p data-i18n="s5.p3">A public transport service can review past ridership patterns to understand busy periods (descriptive) and estimate future demand to plan schedules and staffing (predictive).</p>
+                  </article>
+                </div>
+                <div class="analysis-viz">
+                  <figure class="chart-card">
+                    <figcaption data-i18n="s5.chart1Title">Illustrative trend: observed vs. projected</figcaption>
+                    <svg viewBox="0 0 460 260" class="chart-svg" role="img" aria-labelledby="s5c1t s5c1d">
+                      <title id="s5c1t" data-i18n="s5.chart1Title">Illustrative trend: observed vs. projected</title>
+                      <desc id="s5c1d" data-i18n="s5.chart1Desc">A line chart showing an observed upward trend continuing into a projected range.</desc>
+                      <g class="axes" stroke="rgba(255,255,255,0.25)" stroke-width="1">
+                        <line x1="45" y1="20" x2="45" y2="210"/><line x1="45" y1="210" x2="430" y2="210"/>
+                        <line x1="45" y1="170" x2="430" y2="170" stroke-dasharray="4 6" opacity="0.4"/>
+                        <line x1="45" y1="130" x2="430" y2="130" stroke-dasharray="4 6" opacity="0.4"/>
+                        <line x1="45" y1="90" x2="430" y2="90" stroke-dasharray="4 6" opacity="0.4"/>
+                        <line x1="45" y1="50" x2="430" y2="50" stroke-dasharray="4 6" opacity="0.4"/>
+                      </g>
+                      <text x="12" y="120" class="axis-label vert" transform="rotate(-90 12 120)" data-i18n-svg="s5.y">Value</text>
+                      <text x="240" y="245" text-anchor="middle" class="axis-label" data-i18n-svg="s5.x">Time</text>
+                      <polyline class="line-observed" points="45,190 110,175 175,150 240,135 305,110" fill="none" stroke="#4cc9f0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <polyline class="line-projected" points="305,110 360,85 430,60" fill="none" stroke="#a78bfa" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round"/>
+                      <g class="pts" fill="#4cc9f0"><circle cx="45" cy="190" r="4"/><circle cx="110" cy="175" r="4"/><circle cx="175" cy="150" r="4"/><circle cx="240" cy="135" r="4"/><circle cx="305" cy="110" r="4"/></g>
+                      <circle cx="430" cy="60" r="5" fill="#a78bfa"/>
+                      <rect x="300" y="20" width="130" height="190" fill="rgba(167,139,250,0.08)" rx="4"/>
+                      <g class="legend" font-size="12">
+                        <line x1="60" y1="28" x2="86" y2="28" stroke="#4cc9f0" stroke-width="3"/><text x="92" y="32" fill="#eaf6ff" data-i18n-svg="s5.obs">Observed</text>
+                        <line x1="170" y1="28" x2="196" y2="28" stroke="#a78bfa" stroke-width="3" stroke-dasharray="6 4"/><text x="202" y="32" fill="#eaf6ff" data-i18n-svg="s5.proj">Projected</text>
+                      </g>
+                      <text x="365" y="205" text-anchor="middle" class="axis-label small" data-i18n-svg="s5.future">Future range</text>
+                    </svg>
+                    <p class="chart-note" data-i18n="s5.note1">Illustrative visualization for concept demonstration.</p>
+                  </figure>
+                  <figure class="chart-card mini">
+                    <figcaption data-i18n="s5.chart2Title">Pattern discovery by category (illustrative)</figcaption>
+                    <svg viewBox="0 0 460 180" class="chart-svg" role="img" aria-labelledby="s5c2t s5c2d">
+                      <title id="s5c2t" data-i18n="s5.chart2Title">Pattern discovery by category</title>
+                      <desc id="s5c2d" data-i18n="s5.chart2Desc">Bars comparing relative signal strength across categories.</desc>
+                      <line x1="45" y1="140" x2="430" y2="140" stroke="rgba(255,255,255,0.25)"/>
+                      <g class="bars">
+                        <rect class="bar b1" x="70" y="80" width="46" height="60" rx="6"/><text x="93" y="158" text-anchor="middle" class="bar-label" data-i18n-svg="s5.b1">A</text>
+                        <rect class="bar b2" x="150" y="50" width="46" height="90" rx="6"/><text x="173" y="158" text-anchor="middle" class="bar-label" data-i18n-svg="s5.b2">B</text>
+                        <rect class="bar b3" x="230" y="95" width="46" height="45" rx="6"/><text x="253" y="158" text-anchor="middle" class="bar-label" data-i18n-svg="s5.b3">C</text>
+                        <rect class="bar b4" x="310" y="35" width="46" height="105" rx="6"/><text x="333" y="158" text-anchor="middle" class="bar-label" data-i18n-svg="s5.b4">D</text>
+                      </g>
+                    </svg>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 06 -->
+          <section class="slide" id="slide-6" data-slide="6" aria-label="Slide 6 of 8" aria-hidden="true">
+            <div class="slide-bg slide-bg-6" aria-hidden="true"><div class="split-glow"></div></div>
+            <div class="slide-content">
+              <div class="section-head narrow">
+                <p class="slide-kicker" data-i18n="s6.kicker">Slide 06</p>
+                <h2 class="slide-title" data-i18n="s6.title">THE DECISION</h2>
+                <p class="slide-lead" data-i18n="s6.lead">Turning insight into better choices</p>
+              </div>
+              <div class="decision-layout">
+                <div class="decision-intro">
+                  <p data-i18n="s6.p1">Data-driven insights help people and organizations compare options, reduce uncertainty, and act with clearer evidence.</p>
+                  <p data-i18n="s6.p2" class="caution"><strong data-i18n="s6.cautionLabel">Important:</strong> <span data-i18n="s6.cautionText">Predictions support decisions; they do not guarantee what will happen. Context, judgment, and changing conditions still matter.</span></p>
+                  <article class="case-card compact">
+                    <h3 data-i18n="s6.h3">Business example: e-commerce</h3>
+                    <p data-i18n="s6.p3">An online store can analyze browsing and purchase patterns to decide which products to restock, when to run promotions, and how to improve the shopping experience—while monitoring real outcomes and adjusting.</p>
+                  </article>
+                </div>
+                <div class="decision-compare" aria-label="Comparison between guess-based and data-driven decisions">
+                  <div class="compare-col guess">
+                    <div class="compare-head">
+                      <span class="compare-icon" aria-hidden="true">?</span>
+                      <h3 data-i18n="s6.guessTitle">Guess-based decision</h3>
+                    </div>
+                    <ul>
+                      <li data-i18n="s6.g1">Relies on assumptions or intuition alone</li>
+                      <li data-i18n="s6.g2">Hard to explain or measure consistently</li>
+                      <li data-i18n="s6.g3">Reactive when results are unexpected</li>
+                      <li data-i18n="s6.g4">Higher risk of overlooked patterns</li>
+                    </ul>
+                    <div class="meter" aria-hidden="true"><span class="meter-fill low"></span></div>
+                    <p class="meter-label" data-i18n="s6.gLabel">Clarity: limited</p>
+                  </div>
+                  <div class="compare-vs" aria-hidden="true">VS</div>
+                  <div class="compare-col driven">
+                    <div class="compare-head">
+                      <span class="compare-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 14l4 4 12-12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      <h3 data-i18n="s6.dataTitle">Data-driven decision</h3>
+                    </div>
+                    <ul>
+                      <li data-i18n="s6.d1">Grounded in evidence and observed patterns</li>
+                      <li data-i18n="s6.d2">Clearer reasoning and measurable outcomes</li>
+                      <li data-i18n="s6.d3">Supports proactive planning and iteration</li>
+                      <li data-i18n="s6.d4">Combines insight with human judgment</li>
+                    </ul>
+                    <div class="meter" aria-hidden="true"><span class="meter-fill high"></span></div>
+                    <p class="meter-label" data-i18n="s6.dLabel">Clarity: stronger</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 07 -->
+          <section class="slide" id="slide-7" data-slide="7" aria-label="Slide 7 of 8" aria-hidden="true">
+            <div class="slide-bg slide-bg-7" aria-hidden="true"><div class="horizon"></div><div class="stars"></div></div>
+            <div class="slide-content future-layout">
+              <div class="section-head">
+                <p class="slide-kicker" data-i18n="s7.kicker">Slide 07</p>
+                <h2 class="slide-title" data-i18n="s7.title">THE FUTURE</h2>
+                <p class="slide-lead" data-i18n="s7.lead">Building intelligent systems with responsibility</p>
+              </div>
+              <div class="future-grid">
+                <article class="future-card"><h3 data-i18n="s7.h1">Important directions</h3><p data-i18n="s7.p1">Wider use of AI in everyday tools, better real-time analytics, and more collaboration between humans and intelligent systems across industries.</p></article>
+                <article class="future-card"><h3 data-i18n="s7.h2">Human oversight</h3><p data-i18n="s7.p2">People remain essential to set goals, interpret context, question results, and ensure systems align with values and real-world needs.</p></article>
+                <article class="future-card"><h3 data-i18n="s7.h3">Quality, privacy, responsibility</h3><p data-i18n="s7.p3">Trustworthy outcomes depend on high-quality data, respect for privacy, transparency where possible, and responsible use of technology.</p></article>
+              </div>
+              <div class="future-closing">
+                <p class="thought" data-i18n="s7.thought">The future is not only about smarter machines—it is about wiser choices, guided by evidence and shaped by people.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 08 -->
+          <section class="slide" id="slide-8" data-slide="8" aria-label="Slide 8 of 8" aria-hidden="true">
+            <div class="slide-bg slide-bg-8" aria-hidden="true"><div class="final-glow"></div></div>
+            <div class="slide-content closing-layout">
+              <p class="closing-kicker" data-i18n="s8.kicker">THE NEXT STEP</p>
+              <h2 class="closing-title" data-i18n="s8.title">Turn insight into action.</h2>
+              <p class="closing-tagline" data-i18n="s8.tagline">FROM DATA TO DECISIONS</p>
+              <div class="contact-card" aria-label="Contact information">
+                <h3 data-i18n="s8.contactTitle">Get in touch</h3>
+                <ul class="contact-list">
+                  <li>
+                    <span class="contact-label" data-i18n="s8.phoneLabel">Phone</span>
+                    <a class="contact-link" href="tel:+966541231267" dir="ltr">054 123 1267</a>
+                  </li>
+                  <li>
+                    <span class="contact-label">WhatsApp</span>
+                    <a class="contact-link" href="https://wa.me/966541231267" target="_blank" rel="noopener noreferrer" dir="ltr">wa.me/966541231267</a>
+                  </li>
+                  <li>
+                    <span class="contact-label" data-i18n="s8.emailLabel">Email</span>
+                    <a class="contact-link" href="mailto:mawdaalamody74@gmail.com">mawdaalamody74@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="restart-btn" id="restartBtn" data-i18n="s8.restart">Restart presentation</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bottom-bar" aria-label="Navigation">
+      <button type="button" class="nav-btn" id="prevBtn" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-i18n="nav.prev">Previous</span>
+      </button>
+
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span class="slide-indicator" id="slideIndicator" aria-live="polite">01 / 08</span>
+        </div>
+        <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1" aria-label="Presentation progress">
+          <span class="progress-fill" id="progressFill"></span>
+        </div>
+        <div class="dots" id="dots" role="tablist" aria-label="Slide navigation"></div>
+      </div>
+
+      <button type="button" class="nav-btn primary" id="nextBtn" aria-label="Next slide">
+        <span id="nextLabel" data-i18n="nav.next">Next</span>
+        <svg id="nextIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg id="restartIcon" viewBox="0 0 24 24" aria-hidden="true" style="display:none"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v6h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </footer>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
